@@ -33,7 +33,7 @@ class home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
     }
 
     private fun setToolbar() {
-        binding.toolbar.title = "Mobile App"
+        binding.toolbar.title = "ButterFly Ice Cream"
         binding.toolbar.setTitleTextColor(getColor(R.color.white))
         setSupportActionBar(binding.toolbar)
     }
@@ -57,7 +57,7 @@ class home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         }
         when (item.itemId) {
             R.id.favorite -> {
-                Toast.makeText(this, "Menu Favorite Di-klik", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Menu Favorite ", Toast.LENGTH_SHORT).show()
             }
         }
         return true
