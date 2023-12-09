@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.butterfly.R
 import com.example.butterfly.databinding.FragmentCartBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -20,25 +19,21 @@ private const val ARG_PARAM2 = "param2"
  */
 class CartFragment : Fragment() {
     private lateinit var binding: FragmentCartBinding
-    fun onCreate(view: View, savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cart, container, false)
         binding = FragmentCartBinding.inflate(inflater, container, false)
 
         binding.viewPagerlay.adapter = viewpagAdapter(childFragmentManager)
         binding.tablayy.setupWithViewPager(binding.viewPagerlay)
 
         return binding.root
+
     }
+
+
 
 
 }

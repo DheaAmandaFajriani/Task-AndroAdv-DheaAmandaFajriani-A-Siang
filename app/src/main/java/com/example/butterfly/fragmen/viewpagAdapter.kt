@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.example.butterfly.menuFragment
 import com.example.butterfly.popularmenuFragment
 
-class viewpagAdapter (fm : FragmentManager) : FragmentPagerAdapter(fm) {
+class viewpagAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
 
     override fun getCount(): Int {
